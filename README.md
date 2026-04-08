@@ -26,7 +26,6 @@ housing-prices-project/
 │
 └── README.md                       # Project documentation
 
-
 ---
 
 ## 📊 Dataset Overview

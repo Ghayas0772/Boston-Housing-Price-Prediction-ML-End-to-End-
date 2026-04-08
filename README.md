@@ -7,28 +7,24 @@ This project analyzes the Boston Housing dataset and develops machine learning m
 ---
 
 ## Project Structure
-housing-prices-project/
-│
-├── data/
-│   ├── BostonHousing.csv           # Original raw dataset
-│   └── BostonHousing_clean.csv     # Cleaned dataset after outlier handling
-│
-├── notebooks/
-│   └── EDA_and_Preprocessing.ipynb # Exploratory Data Analysis and Preprocessing steps
-│
-├── models/
-│   └── trained_models/             # Saved machine learning models (optional)
-│
-├── src/
-│   ├── preprocessing.py            # Data cleaning, outlier capping, log-transform
-│   ├── feature_engineering.py      # Feature selection and scaling
-│   └── modeling.py                 # Model training and evaluation scripts
-│
-└── README.md                       # Project documentation
+
+- housing-prices-project/
+  - data/
+    - BostonHousing.csv           # Original raw dataset
+    - BostonHousing_clean.csv     # Cleaned dataset after outlier handling
+  - notebooks/
+    - EDA_and_Preprocessing.ipynb # Exploratory Data Analysis and Preprocessing steps
+  - models/
+    - trained_models/             # Saved machine learning models (optional)
+  - src/
+    - preprocessing.py            # Data cleaning, outlier capping, log-transform
+    - feature_engineering.py      # Feature selection and scaling
+    - modeling.py                 # Model training and evaluation scripts
+  - README.md                     # Project documentation
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 
 The Boston Housing dataset contains **506 rows** and **14 columns**.  
 
@@ -51,7 +47,7 @@ The Boston Housing dataset contains **506 rows** and **14 columns**.
 
 ---
 
-## 🔍 Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis (EDA)
 
 - Checked data types and missing values (none found).  
 - Correlation Analysis revealed top predictors of `MEDV`:
@@ -63,7 +59,7 @@ The Boston Housing dataset contains **506 rows** and **14 columns**.
 
 ---
 
-## 🧹 Data Preprocessing
+## Data Preprocessing
 
 1. **Outlier Capping**: Limit extreme values using IQR.  
 2. **Log Transformation**: Reduce skewness in `CRIM`, `TAX`, `LSTAT`.  
@@ -72,7 +68,7 @@ The Boston Housing dataset contains **506 rows** and **14 columns**.
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 | Model                         | RMSE   | MAE    | R²    |
 |-------------------------------|--------|--------|-------|
@@ -81,7 +77,7 @@ The Boston Housing dataset contains **506 rows** and **14 columns**.
 | K-Nearest Neighbors Regressor | 2.929  | 1.970  | 0.825 |
 | Support Vector Regression     | 3.230  | 2.087  | 0.787 |
 
-✅ **Best Model:** Random Forest Regressor  
+ **Best Model:** Random Forest Regressor  
 
 **Insights:**  
 - More rooms (`RM`) → higher price.  
@@ -90,7 +86,7 @@ The Boston Housing dataset contains **506 rows** and **14 columns**.
 
 ---
 
-## 🛠 Key Libraries
+## Key Libraries
 
 ```python
 import pandas as pd
